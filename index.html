@@ -1,0 +1,95 @@
+<!-- CODE EXPLAINED TUTORIALS -->
+<!-- youtube.com/CodeExplained -->
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.js" integrity="sha512-CWVDkca3f3uAWgDNVzW+W4XJbiC3CH84P2aWZXj+DqI6PNbTzXbl1dIzEHeNJpYSn4B6U8miSZb/hCws7FnUZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <link rel="stylesheet" href="./nav.css">
+  <script src="nav.js" defer></script>  
+    <title>COVID-19 STATS - JAVASCRIPT</title>
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./resources/img/logo.png" alt="" />
+            <p>LS C-19</p>
+          </div>
+
+          <a href="#" class="toggle-button">
+  
+            <span class="bar"></span>
+  
+            <span class="bar"></span>
+  
+            <span class="bar"></span>
+  
+          </a>
+  
+        <div class="navbar-links">
+  
+          <ul>
+            <li><a class="nav_manu" href="./index.html">Home</a></li>
+  
+            <li><a class="nav_manu" href="./learn.html">Learn</a></li>
+
+            <li><a class="change-country" href="#">change country</a></li>
+         
+  
+          </ul>
+  
+        </div>
+  
+      </nav>
+
+    <main>
+      <div class="stats">
+        <div class="latest-report">
+          
+          <div class="total-cases">
+            <div class="title">Total Cases</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="recovered">
+            <div class="title">Recovered</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="deaths">
+            <div class="title">Deaths</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="country">
+            <div class="name">Loading...</div><br>
+            <div class="search-country hide">
+              <div class="search-box">
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="Search ..."
+                />
+                <img class="close" src="./resources/img/close.png"  alt="" />
+              </div>
+              <div class="country-list"></div>
+            </div>
+          </div>
+        </div>
+        <div class="chart">
+          <canvas id="axes_line_chart"></canvas>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="copyright">
+          <p>CS50 FINAL PROJECT 2021 © BY ABDUREZAK MEKA</p>
+        </div>
+      </div>
+    </footer>
+    <script src="resources/js/countries.js"></script>
+    <script src="resources/js/app.js"></script>
+  </body>
+</html>
