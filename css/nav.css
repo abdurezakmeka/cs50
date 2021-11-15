@@ -4,6 +4,8 @@
 Here stylng for navigation bar begins
 
 */
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');
+
 .navbar {
   display: flex;
   position: relative;
@@ -115,7 +117,7 @@ Here navbar resposive stylng begins
 
   .navbar-links li:hover {
     background-color: #74B64A;
-    border-radius: 25px;
+    border-radius: 0px 0px 9px 9px;
     
     
   }

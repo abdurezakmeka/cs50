@@ -7,7 +7,9 @@
 /*                  LOAD FONTS                    */
 /* ---------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');
+
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -212,9 +214,33 @@ main{
   .country-list::-webkit-scrollbar-thumb:hover {
     background: #FFF;
   }
+.learn_section{
+    max-width: 70%;
+    margin: 0 auto;
+}
+.main_article{
+    max-width: 70%;
+    margin: 0 auto;
+    font-size: 35px; 
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color:#EC1B23 ;
+}
+
+.Overview,
+.prevention,
+.symptoms{
+
+    color:#008dc9 ;
+
+}
+
+
+
 /* ---------------------------------------------- */
 /*                    FOOTER                      */
 /* ---------------------------------------------- */
+
 footer{
     max-width: 100%;
     height: 56px;

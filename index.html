@@ -2,17 +2,23 @@
 <!-- youtube.com/CodeExplained -->
 <!DOCTYPE html>
 <html lang="en">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.js" integrity="sha512-CWVDkca3f3uAWgDNVzW+W4XJbiC3CH84P2aWZXj+DqI6PNbTzXbl1dIzEHeNJpYSn4B6U8miSZb/hCws7FnUZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <meta charset="UTF-8" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.js" 
+  integrity="sha512-CWVDkca3f3uAWgDNVzW+W4XJbiC3CH84P2aWZXj+DqI6PNbTzXbl1dIzEHeNJpYSn4B6U8miSZb/hCws7FnUZA==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./resources/css/style.css" />
-    <link rel="stylesheet" href="./nav.css">
-  <script src="nav.js" defer></script>  
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+  <head>
+    <script src="./js/nav.js" defer></script>  
     <title>COVID-19 STATS - JAVASCRIPT</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
   </head>
+
+ 
   <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="./resources/img/logo.png" alt="" />
+            <img src="./img/logo.png" alt="" />
             <p>LS C-19</p>
           </div>
 
@@ -70,7 +76,7 @@
                   id="search-input"
                   placeholder="Search ..."
                 />
-                <img class="close" src="./resources/img/close.png"  alt="" />
+                <img class="close" src="./img/close.png"  alt="" />
               </div>
               <div class="country-list"></div>
             </div>
@@ -89,7 +95,7 @@
         </div>
       </div>
     </footer>
-    <script src="resources/js/countries.js"></script>
-    <script src="resources/js/app.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/countries.js"></script>
   </body>
 </html>
