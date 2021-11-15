@@ -127,13 +127,13 @@ function updateStats() {
   deaths_element.innerHTML = total_deaths;
   new_deaths_element.innerHTML = `+${new_deaths_cases}`;
 
-  // format dates
+  //  Dates
   dates.forEach((date) => {
     formatedDates.push(formatDate(date));
   });
 }
 
-// UPDATE CHART
+//  CHART
 let my_chart;
 function axesLinearChart() {
   if (my_chart) {
@@ -148,25 +148,27 @@ function axesLinearChart() {
           label: "Cases",
           data: cases_list,
           fill: false,
-          borderColor: "#FFF",
-          backgroundColor: "#FFF",
-          borderWidth: 1,
+          borderWidth: 0.5,
+          borderColor: "#009EC3",
+          backgroundColor: "#009EC3",
+          
         },
         {
           label: "Recovered",
           data: recovered_list,
           fill: false,
-          borderColor: "#009688",
-          backgroundColor: "#009688",
-          borderWidth: 1,
+          borderWidth: 0.5,
+          borderColor: "#74B64A",
+          backgroundColor: "#74B64A",
+          
         },
         {
           label: "Deaths",
           data: deaths_list,
           fill: false,
-          borderColor: "#f44336",
-          backgroundColor: "#f44336",
-          borderWidth: 1,
+          borderWidth: 0.5,
+          borderColor: "#EB2A23",
+          backgroundColor: "#EB2A23",
         },
       ],
       labels: formatedDates,
@@ -178,7 +180,8 @@ function axesLinearChart() {
   });
 }
 
-// FORMAT DATES
+ //  Months
+
 const monthsNames = [
   "Jan",
   "Feb",
@@ -197,5 +200,5 @@ const monthsNames = [
 function formatDate(dateString) {
   let date = new Date(dateString);
 
-  return `${date.getDate()} ${monthsNames[date.getMonth()]}`;
+  return ` ${date.getDate()} ${monthsNames[date.getMonth()]} ${date.getFullYear()}`;
 }
