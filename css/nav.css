@@ -1,10 +1,7 @@
-
-/* 
-
-Here stylng for navigation bar begins
-
-*/
+/* importing google fonts */
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');
+
+/* cutomizing  navigation bar */
 
 .navbar {
   display: flex;
@@ -30,6 +27,13 @@ Here stylng for navigation bar begins
   list-style: none;
 }
 
+.navbar-links li a:hover {
+
+  color: black;
+
+}
+
+
 .navbar-links li a {
   display: block;
   text-decoration: none;
@@ -38,9 +42,8 @@ Here stylng for navigation bar begins
 }
 
 .navbar-links li:hover {
-  background-color: #74B64A;
-  border-radius: 1px 25px 1px 25px;
-  
+  background-color: #ffffff;
+  border-radius: 70px 0px 70px 15px;  
 }
 
 .toggle-button {
@@ -60,11 +63,8 @@ Here stylng for navigation bar begins
   border-radius: 10px;
 }
 
-/* 
+/* styling  navigation menu */
 
-Here navbar resposive stylng begins
-
-*/
 .nav_manu{
   cursor: pointer;
   border-radius: 25px;
@@ -82,6 +82,8 @@ Here navbar resposive stylng begins
   text-align: center;
  
 }
+
+/* Customizing navbar for <800px */
 
 @media (max-width: 800px) {
   .navbar {
@@ -111,12 +113,17 @@ Here navbar resposive stylng begins
       padding: .5rem 1rem;
   }
 
+  .navbar-links ul li a:hover {
+    padding: .5rem 1rem;
+    color: black;
+}
+
   .navbar-links.active {
       display: flex;
   }
 
   .navbar-links li:hover {
-    background-color: #74B64A;
+    background-color: #ffffff;
     border-radius: 0px 0px 9px 9px;
     
     

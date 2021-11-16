@@ -1,5 +1,6 @@
+/* Assign variables */
 
-// SELECT ALL ELEMENTS
+
 const country_name_element = document.querySelector(".country .name");
 const total_cases_element = document.querySelector(".total-cases .value");
 const new_cases_element = document.querySelector(".total-cases .new-value");
@@ -10,7 +11,9 @@ const new_deaths_element = document.querySelector(".deaths .new-value");
 
 const ctx = document.getElementById("axes_line_chart").getContext("2d");
 
-// APP VARIABLES
+/* Variable for app */
+
+
 let app_data = [],
   cases_list = [],
   recovered_list = [],
@@ -18,7 +21,9 @@ let app_data = [],
   deaths = [],
   formatedDates = [];
 
-// GET USERS COUNTRY CODE
+/* Fetch visitor country code */
+
+
 fetch("https://api.ipgeolocation.io/ipgeo?apiKey=14c7928d2aef416287e034ee91cd360d")
   .then((res) => {
     return res.json();
@@ -34,9 +39,8 @@ fetch("https://api.ipgeolocation.io/ipgeo?apiKey=14c7928d2aef416287e034ee91cd360
     fetchData(user_country);
   });
 
-/* ---------------------------------------------- */
-/*                     FETCH API                  */
-/* ---------------------------------------------- */
+/* Fetch data from APi */
+
 function fetchData(country) {
   user_country = country;
   country_name_element.innerHTML = "Loading...";
@@ -93,14 +97,16 @@ function fetchData(country) {
         });
       });
 
-    updateUI();
+    update();
   };
 
   api_fetch(country);
 }
 
-// UPDATE UI FUNCTION
-function updateUI() {
+/* stat update fucntion  */
+
+
+function update() {
   updateStats();
   axesLinearChart();
 }
@@ -123,13 +129,15 @@ function updateStats() {
   deaths_element.innerHTML = total_deaths;
   new_deaths_element.innerHTML = `+${new_deaths_cases}`;
 
-  //  Dates
+
+  /* Formating chart and dates  */
+
+
   dates.forEach((date) => {
     formatedDates.push(formatDate(date));
   });
 }
 
-//  CHART
 let my_chart;
 function axesLinearChart() {
   if (my_chart) {
@@ -137,7 +145,7 @@ function axesLinearChart() {
   }
 
   my_chart = new Chart(ctx, {
-    type: "line",
+    type: "bar",
     data: {
       datasets: [
         {
@@ -176,7 +184,7 @@ function axesLinearChart() {
   });
 }
 
- //  Months
+ //  Assigning Month array
 
 const monthsNames = [
   "Jan",

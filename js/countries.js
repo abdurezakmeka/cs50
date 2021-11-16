@@ -1,4 +1,6 @@
-// ALL WORLD COUNTRIES AND THEIR ISO CODE
+/*  Array for all countries and their country ISO code   */
+
+
 let country_list = [
     { name: 'Afghanistan', code: 'AF' },
     { name: 'Albania', code: 'AL' },
@@ -210,14 +212,16 @@ let country_list = [
     { name: 'Zimbabwe', code: 'ZW' }
 ];
 
-// SELECT SEARCH COUNTRY ELEMENTS
+
+/* assign variables */
+
 const search_country_element = document.querySelector(".search-country");
 const country_list_element = document.querySelector(".country-list");
 const chang_country_btn = document.querySelector(".change-country");
 const close_list_btn = document.querySelector(".close");
 const input = document.getElementById('search-input')
 
-// CREATE TE COUNTRY LIST
+/* Create a fuction or create country list */
 function createCountryList(){
     const num_countries = country_list.length;
 
@@ -241,7 +245,8 @@ function createCountryList(){
 let num_of_ul_lists = 1;
 createCountryList();
 
-// SHOW/HIDE THE COUTRY LIST ON CLICK EVENT
+/* Create event listener for country list click */
+
 chang_country_btn.addEventListener("click", function(){
     input.value = "";
     resetCountryList();
@@ -257,8 +262,8 @@ country_list_element.addEventListener("click", function(){
     search_country_element.classList.toggle("hide");
 });
 
-// COUNTRY FILTER
-/* input event fires up whenever the value of the input changes */
+/* Country list  filter event listener function */
+
 input.addEventListener("input", function(){
     let value = input.value.toUpperCase();
 
@@ -271,7 +276,8 @@ input.addEventListener("input", function(){
     })
 })
 
-// RESET COUNTRY LIST (SHOW ALL THE COUNTRIES )
+/* Reset the country list */ 
+
 function resetCountryList(){
     country_list.forEach( country => {
         document.getElementById(country.name).classList.remove("hide");
