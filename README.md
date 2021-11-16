@@ -1,6 +1,6 @@
-CS50 Final Project - COVID-19 STATUS REPORTER
+CS50 Final Project - COVID-19 STATUS REPORTER website
 
-Video Demo:  <URL HERE>
+Video Demo:  https://youtu.be/qhRHp4z8FDU
 
 Description:
 
@@ -11,7 +11,7 @@ When users visit the website their ip address is for used for locating thier cou
 
 How it work:
 
-When a user go to the website from their browser(ie. chrome) to the URL(https://abdraefreq.github.io/cs50/) or (http://www.cs50.42web.io) and he will see the current status of covid-19 in his current location or his country. if a user want to see the other country covid-19 reports he just click on change coutry in the navigation bar and select country from the list or use the input search field to easly find the country. A user can also goto the learn page from the navigation bar and learn more about covid-19 disease.
+When a user go to the website from their browser(ie. chrome) to the URL(https://abdraefreq.github.io/cs50/) or www.cs50.web42.io. and he will see the current status of covid-19 in his current location or his country. if a user want to see the other country covid-19 reports he just click on change coutry in the navigation bar and select country from the list or use the input search field to easly find the country. A user can also goto the learn page from the navigation bar and learn more about covid-19 disease.
 
 What can a visitor see?
 
